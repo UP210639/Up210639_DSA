@@ -1,6 +1,6 @@
-palabra = input("Escribe tu palabra :D : ")
-palabra = palabra.lower() #Los hace mayúsculas
-palabra_nueva = (" ")
+palabra = input("Dame: ")
+palabra = palabra.upper() #Los hace mayúsculas
+palabra_nueva = ""
 for letter in palabra:                            
     if letter not in (" "):    
         palabra_nueva += letter   

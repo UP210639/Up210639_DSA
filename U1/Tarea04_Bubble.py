@@ -1,4 +1,5 @@
 a = [5,2,7,9,3]
+print (a)
 i = 0
 for i in range(0, len(a)+1 - i-2):
     for j in range(0,len(a)+1 - i-2):

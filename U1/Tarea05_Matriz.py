@@ -2,7 +2,7 @@ import random as sample
 def llenarMatriz(matriz):
     for i in range(len(matriz)):
         for j in range(len(matriz[i])):
-            matriz[i][j]=sample.randint(1,1000)
+            matriz[i][j]=sample.randint(1,50)
     return matriz
 def imprimirMatriz(matriz):
     for i in range(len(matriz)):

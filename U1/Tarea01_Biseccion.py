@@ -1,30 +1,26 @@
-#x^2 - 8x + 15
-
-def fun(x):
+def fnEcuacion1(x):     # x'2-8x+15
     r = float
-    r = (x**2) - (8*x) + 15
+    r = (x**2)-(8*x)+15
     return r
 
 x1 = 4
 x2 = 7
-Xp = float
+xm = float
 
-Er = 0.0001
-Ee = abs(x2-x1)
+Es = 0.0001
+Er = abs(x2-x1)
 i = 0
 
-while Er > Ee:
-
-    Xp = (x1 + x2)/2
-    y1 = fun(x1)
-    y2 = fun(Xp)
+while Er > Es:
+    xm = (x1+x2)/2
+    y1 = fnEcuacion1(x1)
+    y2 = fnEcuacion1(xm)
     if y1*y2 < 0:
-        x2 = Xp
+        x2 = xm
     else:
-        x1 = Xp
+        x1 = xm
     Er = abs(x2-x1)
-    i= i + 1
+    i = i+1
 
-print (f"i = {i}, raiz = {Xp}" )
-print ("Hecho...")
-
+print(f"i= {i}, raiz = {xm}")
+print("Hecho. . .")

@@ -59,4 +59,6 @@ a /= 2 * b  # ES IGUAL A a = a / (2 * b)
 print (a)
 
 
+
+
 #print ( "5" + 5 ) #Error en python 

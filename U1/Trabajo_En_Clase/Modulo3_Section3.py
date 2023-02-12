@@ -1,4 +1,4 @@
-#import numpy as np 
+import numpy as np 
 
 squares = [x ** 2 for x in range(10) if x**2 % 2 ==0]  #(operacion || cantidad de numeros || si se desea meter un filtro)
 
@@ -19,7 +19,6 @@ print(board)
 
 # Tipos de matrices dimensional bidimensional y tridimensional  (Se puede incluso una matriz de n dimesiones )
 
-'''
 
 a = np.array([7,2,4])
 
@@ -34,19 +33,18 @@ print("c", c.shape) #Da las dimensiones de la matrices
 print(c[1],[2],[3]) # Llama un dato de las cordenadas 
 
 print(b.shape) 
-print(b.shape[0]) longitud de la matriz 
+print(b.shape[0]) # longitud de la matriz 
 print(b[2,1])
 
 print(np.where(a > 3)) #Busca los valores que tengan sentido con la condicion (solo te trae la posicion :D)
 
-'''
 
 
 board1 = [[i + j for j in range (3)] for i in range (7)]
 
-#board2 = np.array(board1)
+board2 = np.array(board1)
 
-#print("F, C", board2.shape)
+print("F, C", board2.shape)
 
 print("Len ", len(board1))
 
